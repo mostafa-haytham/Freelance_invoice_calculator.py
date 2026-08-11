@@ -32,20 +32,15 @@ total_price = subtotal_after_discount + tax_amount
 
 # Display invoice .
 
-print()
-print()
-print()
-print("_" * 30)
-print()
+print(end="\n\n\n")
+print("_" * 30,end="\n\n")
 print("INVOICE".center(30))
-print("_" * 30)
-print()
+print("_" * 30,end="\n\n")
 print(f"Client: {client_name}")
-print(f"Service: {service_type.title()}")
-print()
-print(f"Hourly rate: ${hourly_rate:,.2f}")
-print(f"Hours worked: {worked_hours:,.2f}")
-print()
+print(f"Service: {service_type.title()}"
+,end="\n\n")
+print(f"Hourly rate: {hourly_rate:,.2f}")
+print(f"Hours worked: {worked_hours:,.2f}",end="\n\n")
 print(f"Sub total: ${subtotal:,.2f}")
 print(f"Discount: ${discount_amount:,.2f}")
 print(f"After discount: ${subtotal_after_discount:,.2f}")
