@@ -46,7 +46,7 @@ print(f"Discount: ${discount_amount:,.2f}")
 print(f"After discount: ${subtotal_after_discount:,.2f}")
 print(f"Tax: ${tax_amount:,.2f}")
 print("",end="\n\n")
-print("-" * 30)
+print("_" * 30)
 
 print(f"Total: ${total_price:,.2f}")
 print("=" * 30)
